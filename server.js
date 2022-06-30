@@ -121,7 +121,7 @@ app.post('/register', function(req, res) {
 
 function register_insert(register_temp) {
     return new Promise((resolve, reject) =>  { 
-       connection.query(`INSERT INTO login (nome, data_nascimento, cpf, med_ou_est, especialidade, crmv_facul) VALUES ('${register_temp.nome}', '${register_temp.data_nascimento}', '${register_temp.cpf}', '${register_temp.med_ou_est}', '${register_temp.especialidade}', '${register_temp.crmv_facul}') `, function(err, results, field){
+       connection.query(`INSERT INTO login (nome, data_nascimento, cpf, med_ou_est, especialidade, crmv_facul, optin) VALUES ('${register_temp.nome}', '${register_temp.data_nascimento}', '${register_temp.cpf}', '${register_temp.med_ou_est}', '${register_temp.especialidade}', '${register_temp.crmv_facul}', '${register_temp.optin}') `, function(err, results, field){
      
         var obj_err = {};
         obj_err.msg_text = '--->>> register_insert - Não entrou no erro ainda...';
