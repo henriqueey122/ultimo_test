@@ -159,7 +159,7 @@ function register_select(register_temp) {
             resolve(results);
         }
 
-//
+
        });
 
 });
