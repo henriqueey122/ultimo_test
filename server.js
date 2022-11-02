@@ -10,10 +10,10 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 var connection = mysql.createConnection({
-host: 'mysql746.umbler.com',
-user: 'gaming_proplan1',
+host: 'mysql836.umbler.com',
+user: 'fenatran_scania1',
 password:'mustang300gt',
-database: 'gaming_proplan',
+database: 'fenatran',
 port: 41890,
 ssl: true
 
